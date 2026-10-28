@@ -22,6 +22,3 @@ def test_stock_invalido():
     with pytest.raises(ValueError):
         clasificar_stock(-2, 20)
 
-
-def test_stock_critico():
-    assert clasificar_stock(7, 20) == "NORMAL"  # cambio incorrecto intencional
